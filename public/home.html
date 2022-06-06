@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <title>Platzi - Food</title>
+</head>
+<body>
+
+   
+
+<!-- NAV -->
+
+<nav x-data="{isOpen: false}" x-show="open" x-transition.duration.400ms class="bg-secondary text-white sticky z-10 w-full">
+ <!-- HEADER -->
+ <header>
+    <div class="div-header">
+        <div><img class="h-8 px-3" src="img/logo-w.svg"></div>
+        <div class="text-2xl px-3 cursor-pointer" x-on:click="isOpen = true ">&equiv;</div>
+    </div>
+</header>
+
+<div x-show="isOpen" @click.outside="isOpen = false">
+<!-- HEADER -->
+<div class="mx-2 my-3 flex justify-center">
+    <input class="input-search" type="search" placeholder="Buscar">
+    <button class="button-search mx-4">
+        Enviar
+    </button>
+</div>
+<div class="mx-2 py-4 flex items-center justify-center">
+    <div class="flex mx-1">
+        <b>Precio:</b>
+        <div class="ml-1">$</div>
+        <div class="ml-1">$$</div>
+        <div class="ml-1 text-primary bold">$$$</div>
+        <div class="ml-1">$$$$</div>
+    </div>
+    <div class="flex mx-1">
+      <b>Calificación: </b>
+        <div class="ml-1 text-primary">&starf;</div>
+        <div class="ml-1 text-primary">&starf;</div>
+        <div class="ml-1 text-primary">&starf;</div>
+        <div class="ml-1">&starf;</div>
+        <div class="ml-1">&starf;</div>
+    </div>
+</div>
+</div>
+
+</nav>
+
+
+
+<!-- NAV -->
+
+
+
+<main class="bg-white mb-8">
+    <div>
+    <div class="bg-no-repeat bg-cover bg-center h-100" style="background-image: url(img/header.jpg) ;"></div>
+</div>
+<!-- CARD -->
+
+<h1 class="titulos-grandes my-5" style="font-size: 40px;">MENU</h1> 
+<hr class="bg-black mx-8 my-5">
+<div class="container mx-auto md:flex">    
+    <div class="mt-4 md:mx-0 md:w-1/2 md:flex md:bg-white rounded-lg md:border-2 md:border-gray-150">
+        <div>
+            <img src="https://images.pexels.com/photos/580612/pexels-photo-580612.jpeg?cs=srgb&dl=pexels-valeria-boltneva-580612.jpg&fm=jpg" alt="Hamburguesa" class="rounded-lg md:w-48 w-full md:h-full object-cover object-left md:rounded-r-none">
+        </div>
+        <div class="bg-white rounded-lg -mt-2 relative shadow-lg md:shadow-none mx-1 md:mx-3  p-2 md:bg-transparent ">
+        <h2 class="titulos-pequeños"> Hamburguesa de Pollo con Queso</h2> 
+        <p class="description-card">Hamburguesa con aderezo de chipotle</p>
+        <div class="price-card">$90.00</div>
+        <div class="calification-card">&starf; &starf; &starf; &starf; &star; / Calificación</div>
+    </div>
+    </div>
+    
+    <div class="mt-4 md:ml-3 md:w-1/2 md:flex md:bg-white rounded-lg md:border-2 md:border-gray-150">
+        <div>
+            <img src="https://images.pexels.com/photos/327158/pexels-photo-327158.jpeg?cs=srgb&dl=pexels-pixabay-327158.jpg&fm=jpg" alt="Hamburguesa" class="rounded-lg md:w-48 w-full md:h-full object-cover object-left md:rounded-r-none">
+        </div>
+        <div class="bg-white rounded-lg -mt-2 relative shadow-lg md:shadow-none mx-1 md:mx-3  p-2 md:bg-transparent ">
+        <h2 class="titulos-pequeños"> Hamburguesa Americana</h2> 
+        <p class="description-card">Hamburguesa con aceitunas y tocino</p>
+        <div class="price-card">$105.00</div>
+        <div class="calification-card">&starf; &starf; &starf; &starf; &star; / Calificación</div>
+    </div>
+    </div>
+    </div>
+
+<div class="container mx-auto md:flex">    
+    <div class="mt-4 md:mx-0 md:w-1/2 md:flex md:bg-white rounded-lg md:border-2 md:border-gray-150">
+        <div>
+            <img src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1199957.jpg&fm=jpg" alt="Hamburguesa" class="rounded-lg md:w-48 w-full md:h-full object-cover object-left md:rounded-r-none">
+        </div>
+        <div class="bg-white rounded-lg -mt-2 relative shadow-lg md:shadow-none mx-1 md:mx-3  p-2 md:bg-transparent ">
+        <h2 class="titulos-pequeños"> Hamburguesa Especial</h2> 
+        <p class="description-card">Hamburguesa con aderezo de fresa picante</p>
+        <div class="price-card">$150.00</div>
+        <div class="calification-card">&starf; &starf; &starf; &starf; &star; / Calificación</div>
+    </div>
+    </div>
+    
+    <div class="mt-4 md:ml-3 md:w-1/2 md:flex md:bg-white rounded-lg md:border-2 md:border-gray-150">
+        <div>
+            <img src="https://images.pexels.com/photos/2702674/pexels-photo-2702674.jpeg?cs=srgb&dl=pexels-anna-tukhfatullina-food-photographerstylist-2702674.jpg&fm=jpg" alt="Hamburguesa" class="rounded-lg md:w-48 w-full md:h-full object-cover object-left md:rounded-r-none">
+        </div>
+        <div class="bg-white rounded-lg -mt-2 relative shadow-lg md:shadow-none mx-1 md:mx-3  p-2 md:bg-transparent ">
+        <h2 class="titulos-pequeños"> Hamburguesa Sencilla</h2> 
+        <p class="description-card">Hamburguesa con carne de res</p>
+        <div class="price-card">$125.00</div>
+        <div class="calification-card">&starf; &starf; &starf; &star; &star; / Calificación</div>
+    </div>
+    </div>
+    </div>
+
+<!-- CARD -->
+</main>
+
+<!-- FORM -->
+
+<div class="mx-6 my-5">
+    <hr class="bg-black my-5">
+    <h1 class="titulos-pequeños" style="font-size:40px">CONTACTO</h1> 
+    <div class="div-form-responsive">
+    <div class="lg:mx-6"> Nombre  </div>
+    <input class="input-forms" type="text" placeholder="">
+</div>
+<div class="div-form-responsive">
+    <div class="lg:mx-7"> Correo </div>
+    <input class="input-forms" type="text" placeholder="">
+</div>
+<div class="div-form-responsive">
+    <div class="lg:mx-2"> Comentarios </div>
+    
+    <textarea class="input-forms" type="text" placeholder="">
+    </textarea>
+</div>
+</div>
+
+<div class="my-6">
+    <button class="button-contact">
+        Enviar
+    </button>
+</div>
+
+</div>
+
+
+<!-- FORM -->
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="md:-bottom-1 bg-secondary text-white w-full h-30">
+        <ul class="footer-ul">
+             <li class="icons-footer"><i class="fa fa-instagram"></i></li>
+            <li class="icons-footer"><i class="fa fa-facebook"></i></li>
+            <li class="icons-footer"><i class="fa fa-twitter"></i></li>
+        </ul>
+        <ul class="footer-ul2">
+            <li class="icons-footer-2">Acerca de</li>
+            <li class="icons-footer-2">Aviso de Privacidad</li>
+            <li class="icons-footer-2">Registro</li>
+            <li class="icons-footer-2">Contacto</li>
+        </ul>
+        <ul class="footer-ul-3">
+            <li class="my-5">&copy; Platzi Food 2022 </li>
+        </ul>
+    </footer>
+
+</body>
+</html>

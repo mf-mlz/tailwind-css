@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+    .text-cen{
+        @apply text-center;
+    }
+    .alert-default {
+      @apply w-1/5 py-2 px-4 mx-2 my-4 border-2 border-gray-600 bg-gray-500 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75;
+    }
+    .alert-danger {
+        @apply w-1/5 py-2 px-4 mx-2 my-4 border-2 border-red-600 bg-red-500 text-red-100 font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75;
+      }
+
+      .alert-warning {
+        @apply w-1/5 py-2 px-4 mx-2 my-4 border-2 border-yellow-600 bg-yellow-500 text-yellow-100 font-semibold rounded-lg shadow-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75;
+      }
+      .alert-info {
+        @apply w-1/5 py-2 px-4 mx-2 my-4 border-2 border-blue-600 bg-blue-500 text-blue-100 font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+      }
+
+      .input-forms{
+        @apply w-full lg:w-1/2 bg-gray-200 hover:bg-white border focus:outline-none border-gray-200 py-2 px-1 rounded text-gray-800 leading-snug;
+      }
+
+      .input-search{
+        @apply w-4/5 bg-gray-200 hover:bg-white border focus:outline-none border-gray-200 py-2 px-1 rounded text-gray-800 leading-snug;
+      }
+
+      .div-form-responsive{
+        @apply lg:flex lg:justify-center lg:my-5;
+      }
+
+      .titulos-pequeños{
+        @apply text-center text-xl uppercase tracking-tight font-semibold text-gray-900 md:text-lg my-6
+      }
+
+      .titulos-grandes{
+        @apply text-center uppercase tracking-tight font-semibold text-gray-900 md:text-lg my-6
+      }
+
+      .div-header{
+        @apply bg-secondary text-white flex justify-between items-center h-10 w-full;
+      }
+
+      .div-card-gb{
+        @apply bg-white rounded-lg -mt-2 relative shadow-lg md:shadow-none mx-1 md:mx-3  p-2 md:bg-transparent;
+      }
+
+      .description-card{
+        @apply text-gray-700 text-sm leading-snug mt-1;
+      }
+
+      .price-card{
+        @apply text-gray-700 text-sm leading-snug font-bold mt-2;
+      }
+
+      .calification-card{
+        @apply text-yellow-700 text-xs;
+      }
+
+      .button-contact{
+        @apply bg-secondary hover:bg-primary rounded text-lg py-2 px-2 text-white block mx-auto w-1/6;
+      }
+
+      .button-search{
+        @apply bg-primary hover:bg-primary rounded text-lg py-2 px-2 text-white block mx-auto w-1/6;
+      }
+
+      .icons-footer{
+        @apply mx-8 hover:text-primary;
+      }
+
+      .icons-footer-2{
+        @apply mx-5 hover:text-primary;
+      }
+
+      .footer-ul{
+        @apply flex justify-center text-sm py-3 lg:my-1;
+      }
+
+      .footer-ul2{
+        @apply  lg:flex text-center lg:justify-center text-sm;
+      }
+
+      .footer-ul-3{
+        @apply flex justify-center text-sm;
+      }
+
+
+  }
+
+  
+
+@tailwind utilities;
+
+.my-rotate-45{
+    transform: rotate(45deg);
+}
+
+.w-full { width: 100%; }
+

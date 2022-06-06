@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <title>Prueba</title>
+</head>
+<body class="mx-4 my-5">
+    <div class="bg-blue-100 rounded-lg">
+    <h1 class="text-5xl font-mono text-center">COLORES Y DIMENSIONES</h1>
+    <p class="my-3 flex items-center justify-center font-bold"> ● Crea un botón color azul siguiendo estos consejos, recuerda que las tonalidades predefinidas van del 100 al 900.<br>
+        ● Crea un botón que se adapte según el tamaño de dispositivo.<br>
+        ● Cuando sea de tamaño pequeño, este botón debe abarcar el ancho de la pantalla y cuando sea un poco más grande debe tener un tamaño predeterminado.</p>
+    <div class="my-4 flex items-center justify-center">
+        <button type="button" class="md:w-full sm:w-full lg:w-1/4 text-blue-200 bg-blue-700 h-10 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Responsive Button</button>
+    </div>
+</div>
+
+<div class="bg-pink-100 rounded-lg mt-3">
+    <h1 class="text-5xl font-mono text-center">DISPLAY y FLEXBOX</h1>
+    <p class="my-3 flex items-center justify-center font-bold">
+        ● Crea lo que se conoce como group button de 3 buttons o más. Esto lo logras utilizando lo aprendido en display o flexbox, así como margin y padding.<br>
+    <div class="my-4 flex items-center justify-center">
+        <button type="button" class="inline-block mx-2 my-4 xs:w-1/4 sm:w-1/3 md:w-1/4 text-pink-200 bg-pink-600 h-10 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Flex Button 1</button>
+        <button type="button" class="inline-block mx-2 my-4 xs:w-1/4 sm:w-1/3 md:w-1/4 text-pink-200 bg-pink-600 h-10 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Flex Button 1</button>
+        <button type="button" class="inline-block mx-2 my-4 xs:w-1/4 sm:w-1/3 md:w-1/4 text-pink-200 bg-pink-600 h-10 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Flex Button 1</button>
+    </div>
+    </div>
+
+    <div class="bg-purple-200 rounded-lg mt-3">
+        <h1 class="text-5xl font-mono text-center">PSEUDO—CLASS VARIANTS</h1>
+        <p class="my-3 flex items-center justify-center font-bold">
+            ● Cuando pases el cursor encima de uno de los botones deberá cambiar el fondo a un color más oscuro, de tal manera que resalte con el texto. Y al estar en estado normal, el fondo deberá ser claro y el texto, color oscuro.<br>
+        <div class="my-4 flex items-center justify-center">
+            <button type="button" class="inline-block mx-2 my-4 xs:w-1/4 sm:w-1/3 md:w-1/4 text-purple-200 bg-purple-700 h-10 hover:bg-purple-800 focus:ring-4 focus:ring-purple-100 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Flex Button 1</button>
+            <button type="button" class="inline-block mx-2 my-4 xs:w-1/4 sm:w-1/3 md:w-1/4 text-purple-200 bg-purple-700 h-10 hover:bg-purple-800 focus:ring-4 focus:ring-purple-100 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Flex Button 1</button>
+            <button type="button" class="inline-block mx-2 my-4 xs:w-1/4 sm:w-1/3 md:w-1/4 text-purple-200 bg-purple-700 h-10 hover:bg-purple-800 focus:ring-4 focus:ring-purple-100 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Flex Button 1</button>
+        </div>
+        </div>
+
+        <div class="bg-green-200 rounded-lg mt-3">
+            <h1 class="text-5xl font-mono text-center">EXTRAER COMPONENTES USANDO @apply</h1>
+            <p class="my-3 flex items-center justify-center font-bold">
+                ● Utilizando la directiva @apply, crea un componente de “alert” con sus variaciones para que se comporte distinto según la clase que le acompañe.<br>
+                
+            <div class="my-3 flex items-center justify-center">
+                <div class = "alert-default text-cen">
+                    Este mensaje es una alerta default.
+                </div>
+                
+                <div class = "alert-danger text-cen">
+                    Este mensaje es una alerta danger.
+                </div>
+                <div class = "alert-warning text-cen">
+                    Este mensaje es una alerta warning.
+                </div>
+                
+                <div class = "alert-info text-cen">
+                    Este mensaje es una alerta info.
+                </div>
+                
+              
+            </div>
+            </div>
+
+
+
+<!-- <div class="my-3 flex items-center justify-center">
+    <button type="button" class="
+    text-purple-200
+    bg-purple-700
+    rounded-lg
+    w-1/4
+    h-10
+    hover:bg-purple-800
+    
+
+    sm:text-green-200 sm:w-1/2 sm:bg-green-700 sm:hover:bg-green-800 
+    sm:focus:ring-4 sm:focus:ring-green-300 
+    sm:font-medium  
+    sm:text-sm sm:px-5 sm:py-2.5 sm:mr-2 sm:mb-2 
+    sm:dark:bg-green-600 sm:dark:hover:bg-green-700 
+    sm:focus:outline-none sm:dark:focus:ring-green-800
+
+    md:bg-red-500 md:text-red-200 md:w-1/2
+    md:focus:ring-4 md:focus:ring-green-300 
+    md:font-medium  
+    md:text-sm md:px-5 md:py-2.5 md:mr-2 md:mb-2 
+    md:dark:bg-red-600 md:dark:hover:bg-red-700 
+    md:focus:outline-none md:dark:focus:ring-red-800
+    
+    ">Botón 2</button>
+</div> -->
+</body>
+</html>
